@@ -37,7 +37,7 @@ export const registerController = async (req, res, next) => {
   })
 }
 
-export const logInController = async (req, res) => {
+export const logInController = async (req, res, next) => {
   const { email, password } = req.body
 
   //validation
