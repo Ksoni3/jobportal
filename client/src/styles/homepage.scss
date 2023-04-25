@@ -72,10 +72,11 @@
     }
 
     .content-wrapper {
-      width: 70%;
+      width: 37%;
       margin: 0 auto;
       display: flex;
       align-items: center;
+
       @include mobile {
         flex-direction: column;
         width: 100%;
@@ -84,10 +85,10 @@
     }
 
     h1 {
-      width: 55%;
+      width: 80%;
       color: crimson;
-      font-size: 1.5rem;
-      letter-spacing: 0.1rem;
+      font-size: 0.8rem;
+      letter-spacing: 0.15rem;
       padding: 0;
       @include mobile {
         width: auto;
@@ -96,12 +97,12 @@
     }
 
     button {
-      width: 30%;
-      padding: 1rem 3rem;
+      width: 25%;
+      padding: 0.5rem 0.5rem;
       border-radius: 2rem;
       background-color: rgb(229, 8, 52);
       color: white;
-      font-size: 1.3rem;
+      font-size: 0.8rem;
       border: none;
 
       @include mobile {
@@ -150,7 +151,8 @@
     .app-wrapper {
       width: 90%;
       margin: 2rem auto;
-      padding-top: 1.4rem;
+      padding: 1.4rem 0;
+
 
       display: flex;
       align-items: center;

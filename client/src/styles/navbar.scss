@@ -2,16 +2,14 @@
 
 .nav-wrapper {
   background: white;
-  padding: 1rem 10rem 1rem 2rem;
+  padding: 1rem 2rem 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-
-  @include mobile{
-  padding: 1rem 0.5rem;
+  @include mobile {
+    padding: 1rem 0.5rem;
   }
-
 
   .logo-wrapper {
     font-size: 70px;
@@ -22,14 +20,13 @@
     @include mobile {
       height: 10vh;
       gap: 0.1rem;
-
     }
-    h1{
+    h1 {
       font-size: 2rem;
-    @include mobile{
-      h1 {
-        font-size: 2rem;
-      }
+      @include mobile {
+        h1 {
+          font-size: 2rem;
+        }
       }
     }
 
@@ -43,14 +40,15 @@
         font-size: 2rem;
         top: 24px;
         left: 143px;
-
       }
     }
   }
 
   .largescreen-navbar {
+   
     display: flex;
-    gap: 4rem;
+    gap: 2rem;
+    margin-left: 10rem;
     @include mobile {
       display: none;
     }
@@ -60,6 +58,7 @@
       list-style: none;
 
       .link {
+        font-size: 1.3rem;
         color: crimson;
         font-weight: 400;
         text-decoration: none;
@@ -72,47 +71,40 @@
     }
   }
 
-  .mobilescreen-navabar{
+  .mobilescreen-navabar {
     display: none;
-    @include mobile{
+    @include mobile {
       @include applyflex;
-    z-index: 100;
-    background: white;
-    flex-direction: column;
-    gap: 7rem;
-    width: 90vw;
-    height: 88vh;
-    position: absolute;
-    top: 90px;
-    right: 0;
-    transition: 0.2s ease-in-out;
+      z-index: 100;
+      background: white;
+      flex-direction: column;
+      gap: 7rem;
+      width: 90vw;
+      height: 88vh;
+      position: absolute;
+      top: 90px;
+      right: 0;
+      transition: 0.2s ease-in-out;
 
-    li{
-      
-      list-style: none;
-  
-      .link{
-        text-decoration: none;
-        letter-spacing: 0.1rem;
-        font-size: 2rem;
-        font-weight: 500;
-        color: crimson;
+      li {
+        list-style: none;
+
+        .link {
+          text-decoration: none;
+          letter-spacing: 0.1rem;
+          font-size: 2rem;
+          font-weight: 500;
+          color: crimson;
+        }
       }
-
     }
-    }
-
   }
-  .outline-menu{
-
+  .outline-menu {
     display: none;
-    @include mobile{
+    @include mobile {
       margin-right: 1rem;
       display: block;
       font-size: 4rem;
-
     }
-   
-
   }
 }
