@@ -76,8 +76,10 @@ const HomePage = () => {
         <h2> Your first step towards success begins here</h2>
       </div>
       <div className='sub-wrapper'>
+        <div className='content-wrapper'>
         <h1> Get Notified About Latest Jobs Posts</h1>
         <button> Subscribe Now</button>
+        </div>
       </div>
       <div className='category-wrapper'>
       {
