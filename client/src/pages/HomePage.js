@@ -63,15 +63,7 @@ const HomePage = () => {
       <div className="main-wrapper">
         <div className="search-wrapper">
           <input type="text" placeholder="Search Job" />
-          <FaSearch
-            style={{
-              color: 'gray',
-              fontSize: '24px',
-              position: 'relative',
-              right: '60px',
-              top: '6px',
-            }}
-          />
+          <FaSearch className='search-icon'/>
         </div>
         <h2> Your first step towards success begins here</h2>
       </div>

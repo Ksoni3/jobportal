@@ -18,7 +18,9 @@
     position: relative;
 
     @include mobile {
+      min-height: 10vh;
       padding-left: 0;
+      height: 20rem;
     }
 
     &::before {
@@ -41,10 +43,28 @@
         border-radius: 2rem;
         padding-left: 2rem;
         outline: none;
-        margin-bottom: 1rem;
+        
         @include mobile {
-          width: 80vw;
-          margin-left: 1.3rem;
+          display: block;
+          width: 95vw;
+          margin: 0 auto;
+         
+        }
+      }
+
+      .search-icon{
+        color: gray;
+        font-size: 24px;
+        position: relative;
+        right: 60px;
+        top: 6px;
+
+        @include mobile{
+          
+         left: 320px;
+         top: -43px;
+         
+
         }
       }
     }
@@ -52,7 +72,7 @@
       margin-top: 0.5rem;
       letter-spacing: 0.3rem;
       @include mobile {
-        margin-top: 0;
+        margin-top: -2rem;
         letter-spacing: 0;
 
         padding: 0 5px;
