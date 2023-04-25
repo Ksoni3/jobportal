@@ -1,0 +1,26 @@
+@import 'mixin';
+
+.ec-container {
+  @include applyflex;
+  height: 10rem;
+  width: 15%;
+  flex-direction: column;
+  gap: 0.3rem;
+  box-shadow: 2px 2px 10px whitesmoke;
+  padding: 0 1rem;
+
+  @include mobile{
+    width: 50%;
+    padding: 0 3rem;
+    
+  }
+  
+
+  img {
+    width: 9rem;
+    height: 3rem;
+  }
+  
+
+ 
+}

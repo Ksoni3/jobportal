@@ -25,6 +25,7 @@
     "mongoose": "^7.0.4",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.22",
+    "react-router-dom": "^6.10.0",
     "swagger-doc": "^0.3.0",
     "swagger-ui-express": "^4.6.2",
     "validator": "^13.9.0",
