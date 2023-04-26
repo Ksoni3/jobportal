@@ -40,7 +40,7 @@ const Navbar = () => {
         </li>
       </ul>
 
-      <ul className='mobilescreen-navabar' style={{ right: !isToggle ? '-2000px' : '0' }}>
+      <ul className='mobilescreen-navabar' style={{ display: !isToggle ? 'none' : 'flex' }}>
         <li>
           <Link to="/" className='link' onClick={closeMenu}>Home </Link>
         </li>
