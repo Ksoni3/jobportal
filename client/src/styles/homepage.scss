@@ -58,8 +58,14 @@
         top: 0;
 
         @include mobile {
-          left: 18vmax;
+          left: 37%;
           top: -4vmax;
+        }
+
+        @include small-mobile{
+          left: 37%;
+          top: -5vmax;
+
         }
       }
     }

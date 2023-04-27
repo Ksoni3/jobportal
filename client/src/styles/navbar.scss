@@ -2,10 +2,14 @@
 
 .nav-wrapper {
   background: white;
-  padding: 1vmax;
+  padding: 1.1vmax;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include mobile{
+    padding: 1.4vmax;
+
+  }
 
   .logo-wrapper {
     width: 40%;
