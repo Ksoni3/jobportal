@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <div className="nav-wrapper">
       <div className='logo-wrapper'>
-      <AiFillAlipayCircle style={{ color: 'crimson' }} />
+      <AiFillAlipayCircle className='logo' style={{ color: 'crimson' }} />
       <h1> Job_</h1><span>Portal</span>
       </div>
       <ul className='largescreen-navbar'>

@@ -1,15 +1,15 @@
 @import 'mixin';
 
 .home-container {
-  
   min-height: 100vh;
 
   .main-wrapper {
+    border: 2px solid blue;
     background-image: url('../Assets/sydney.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    min-height: 50vh;
+    min-height: 30vmax;
     opacity: 0.9;
     display: flex;
     flex-direction: column;
@@ -17,12 +17,6 @@
     justify-content: center;
     color: white;
     position: relative;
-
-    @include mobile {
-      min-height: 10vh;
-      padding-left: 0;
-      height: 20rem;
-    }
 
     &::before {
       content: '';
@@ -36,19 +30,25 @@
     }
 
     .search-wrapper {
+      border: 2px solid blue;
       z-index: 10;
+      width: 100%;
+      @include applyflex;
+
+      @include mobile {
+        flex-direction: column;
+      }
 
       input {
-        width: 33rem;
-        padding: 1.4rem 1rem;
-        border-radius: 2rem;
-        padding-left: 2rem;
+        width: 50%;
+        padding: 1.6vmax 1.2vmax;
+        border-radius: 2.5vmax;
+        padding-left: 2.5vmax;
         outline: none;
 
         @include mobile {
-          display: block;
-          width: 95vw;
-          margin: 0 auto;
+          width: 90%;
+          margin-top: 2vmax;
         }
       }
 
@@ -56,38 +56,34 @@
         color: gray;
         font-size: 24px;
         position: relative;
-        right: 60px;
-        top: 6px;
+        right: 4vmax;
+        top: 0;
 
         @include mobile {
-          left: 330px;
-          top: -43px;
+          left: 16vmax;
+          top: -4vmax;
         }
       }
     }
     h2 {
-      margin-top: 0.5rem;
-      letter-spacing: 0.3rem;
+      margin-top: 0.5vmax;
+      letter-spacing: 0.4vmax;
+      font-size: 2.4vmax;
       @include mobile {
-        margin-top: -2rem;
+        font-size: 2.1vmax;
         letter-spacing: 0;
-        padding: 0 5px;
-        font-size: 1.3rem;
       }
-
-      
     }
   }
 
   .sub-wrapper {
+    width: 100%;
     background: rgb(241, 238, 238);
-    height: 14vh;
+    height: 6vmax;
     display: flex;
     align-items: center;
-
     @include mobile {
-      
-      height: 16vh;
+      height: 14vmax;
     }
 
     .content-wrapper {
@@ -99,28 +95,23 @@
       @include mobile {
         flex-direction: column;
         width: 100%;
+        gap: 1.2vmax;
       }
-      @include tablets{
-         flex-direction: column;
-        width: 100%;
-        gap: 1rem;
-      }
+     
     }
 
     h1 {
       width: 80%;
       color: crimson;
-      font-size: 0.8rem;
+      font-size: 1vmax;
       letter-spacing: 0.15rem;
       padding: 0;
 
-     
-
-      @include tablets{
-       width: 75%;
-        font-size: 0.8rem;
+      @include mobile {
+        text-align: center;
+        width: 100%;
+        font-size: 1.8vmax;
       }
-      
     }
 
     button {
@@ -147,15 +138,14 @@
 
   .category-wrapper {
     width: 90%;
-    margin: 2rem auto;
+    margin: 2vmax auto;
     display: flex;
     flex-wrap: wrap;
-    gap: 3rem;
+    gap: 3.2vmax;
     justify-content: flex-start;
     @include tablets {
-      
-      gap: 2rem;
-      margin-bottom: 3rem;
+      gap: 2vmax;
+      margin-bottom: 5vmax;
     }
   }
 
@@ -174,7 +164,7 @@
     width: 90%;
     padding: 0.5rem 0;
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     overflow-y: hidden;
     overflow-x: scroll;
   }

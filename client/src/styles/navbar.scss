@@ -2,63 +2,56 @@
 
 .nav-wrapper {
   background: white;
-  padding: 1rem 2rem 1rem 2rem;
+  padding: 1vmax;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  @include mobile {
-    padding: 1.2rem 0.5rem;
-  }
-
   .logo-wrapper {
-    font-size: 70px;
+    width: 40%;
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 1vmax;
     position: relative;
-    @include mobile {
-      height: 7vh;
-      gap: 0.1rem;
-    }
+    .logo {
+      font-size: 50px;
+
+     
+      }
+    
+
+   
     h1 {
-      font-size: 2rem;
+      font-size: 2.2vmax;
     }
 
     span {
-      font-size: 2rem;
-      margin-left: -1rem;
-
-      @include mobile {
-        margin-left: 0;
-      }
+      color: crimson;
+      font-size: 2.1vmax;
+      margin-left: -1vmax;
     }
   }
 
   .largescreen-navbar {
+    width: 60%;
     display: flex;
-    gap: 2rem;
-    margin-left: 10rem;
-    @include mobile {
-      display: none;
-    }
+    justify-content: end;
+    padding-right: 1vmax;
+    gap: 2vmax;
+
     @include tablets {
       display: none;
     }
 
     li {
-      font-size: 1.6rem;
       list-style: none;
 
       .link {
-        font-size: 1.3rem;
+        font-size: 1.6vmax;
         color: crimson;
         font-weight: 400;
         text-decoration: none;
         transition: 0.2s ease-in;
-        @include tablets {
-          font-size: 1rem;
-        }
 
         &:hover {
           color: black;
@@ -75,12 +68,12 @@
       z-index: 100;
       background: white;
       flex-direction: column;
-      gap: 7rem;
+      gap: 7vmax;
       width: 90vw;
       height: 91vh;
-      padding-bottom: 3rem;
+      padding-bottom: 3.9vmax;
       position: absolute;
-      top: 82px;
+      top: 6vmax;
       right: 0;
       transition: 0.2s ease-in-out;
 
@@ -102,7 +95,7 @@
     @include tablets {
       margin-right: 1rem;
       display: block;
-      font-size: 4rem;
+      font-size: 4.5vmax;
     }
   }
 }
