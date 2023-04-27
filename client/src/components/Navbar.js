@@ -38,6 +38,10 @@ const Navbar = () => {
           {' '}
           <Link to="/login" className='link'>Log In</Link>
         </li>
+        <li>
+          {' '}
+          <Link to="/register" className='link' >Register</Link>
+        </li>
       </ul>
 
       <ul className='mobilescreen-navabar' style={{ display: !isToggle ? 'none' : 'flex' }}>
@@ -55,6 +59,10 @@ const Navbar = () => {
         <li>
           {' '}
           <Link to="/login" className='link' onClick={closeMenu}>Log In</Link>
+        </li>
+        <li>
+          {' '}
+          <Link to="/register" className='link' onClick={closeMenu}>Register</Link>
         </li>
       </ul>
 

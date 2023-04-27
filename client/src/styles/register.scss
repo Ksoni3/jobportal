@@ -1,0 +1,64 @@
+@import 'mixin';
+
+.register-container {
+  min-height: 100vh;
+  padding-top: 2vmax;
+  @include applyflex;
+  flex-direction: column;
+  @include mobile{
+    gap: 2vmax;
+    
+    transform: translateY(-20%);
+    padding-top: 0;
+  }
+
+  form {
+    margin-top: 2vmax;
+    padding: 1.5vmax 0;
+    width: 80%;
+    @include applyflex;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px rgba($color: slategray, $alpha: 0.5);
+
+    div {
+      font-size: 2vmax;
+      width: 85%;
+      margin: 1.5vmax auto;
+      color: crimson;
+
+      label {
+        display: inline-block;
+        width: 43%;
+
+        @include mobile {
+          width: 33%;
+
+          font-size: 1.5vmax;
+        }
+      }
+
+      input {
+        padding: 1vmax;
+        font-size: 80%;
+        border: none;
+        outline: none;
+        border-radius: 1vmax;
+        box-shadow: 0px 0px 5px rgba($color: #000000, $alpha: 0.8);
+        @include mobile {
+          padding: 0.5vmax;
+          font-size: 1.5vmax;
+        }
+      }
+    }
+    button {
+      color: crimson;
+      width: 25%;
+      font-size: 1.2vmax;
+      margin-top: 1vmax;
+      padding: 0.8vmax 0;
+      border-radius: 1vmax;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
