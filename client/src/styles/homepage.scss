@@ -4,7 +4,6 @@
   min-height: 100vh;
 
   .main-wrapper {
-    border: 2px solid blue;
     background-image: url('../Assets/sydney.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -30,7 +29,6 @@
     }
 
     .search-wrapper {
-      border: 2px solid blue;
       z-index: 10;
       width: 100%;
       @include applyflex;
@@ -60,7 +58,7 @@
         top: 0;
 
         @include mobile {
-          left: 16vmax;
+          left: 18vmax;
           top: -4vmax;
         }
       }
@@ -97,7 +95,6 @@
         width: 100%;
         gap: 1.2vmax;
       }
-     
     }
 
     h1 {
