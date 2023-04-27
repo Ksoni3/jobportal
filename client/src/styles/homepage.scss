@@ -32,6 +32,7 @@
       z-index: 10;
       width: 100%;
       @include applyflex;
+      position: relative;
 
       @include mobile {
         flex-direction: column;
@@ -58,15 +59,13 @@
         top: 0;
 
         @include mobile {
-          left: 37%;
-          top: -4vmax;
+          position: absolute;
+          
+          top: 3.5vmax;
+          right: 5vmax;
+          
         }
 
-        @include small-mobile{
-          left: 37%;
-          top: -5vmax;
-
-        }
       }
     }
     h2 {

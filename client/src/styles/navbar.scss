@@ -6,10 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  @include mobile{
-    padding: 1.4vmax;
-
-  }
+  
 
   .logo-wrapper {
     width: 40%;
@@ -18,7 +15,7 @@
     gap: 1vmax;
     position: relative;
     .logo {
-      font-size: 50px;
+      font-size: 60px;
 
      
       }
@@ -26,12 +23,12 @@
 
    
     h1 {
-      font-size: 2.2vmax;
+      font-size: 2.3vmax;
     }
 
     span {
       color: crimson;
-      font-size: 2.1vmax;
+      font-size: 2.3vmax;
       margin-left: -1vmax;
     }
   }
@@ -87,7 +84,7 @@
         .link {
           text-decoration: none;
           letter-spacing: 0.1rem;
-          font-size: 2rem;
+          font-size: 2.5vmax;
           font-weight: 500;
           color: crimson;
         }
