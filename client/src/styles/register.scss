@@ -6,20 +6,29 @@
   @include applyflex;
   flex-direction: column;
   @include mobile{
+    height:90vh;
+    justify-content: start;
     gap: 2vmax;
-    
-    transform: translateY(-20%);
-    padding-top: 0;
+    padding-top: 5vmax;
+  }
+  h1{
+    font-size: 5vmin;
   }
 
   form {
     margin-top: 2vmax;
     padding: 1.5vmax 0;
-    width: 80%;
+    width: 82%;
     @include applyflex;
     flex-direction: column;
+    border-radius: 2vmax;
     box-shadow: 0px 0px 5px rgba($color: slategray, $alpha: 0.5);
-
+    @include mobile{
+        padding: 10vmax 0;
+        justify-content: flex-start;
+        height: 56%;
+       
+    }
     div {
       font-size: 2vmax;
       width: 85%;
@@ -48,7 +57,18 @@
           padding: 0.5vmax;
           font-size: 1.5vmax;
         }
+
+       
       }
+    }
+
+    span{
+        margin-left: 10px;
+        font-size: 3.5vmin;
+
+        @include mobile{
+            font-size: 3vmin;
+        }
     }
     button {
       color: crimson;
@@ -59,6 +79,11 @@
       border-radius: 1vmax;
       border: none;
       cursor: pointer;
+
+      &:hover{
+        background: crimson;
+        color: white;
+      }
     }
   }
 }
