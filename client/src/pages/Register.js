@@ -56,7 +56,7 @@ const Register = () => {
           <span htmlFor="terms">I have read license and all the terms and conditions</span>
         </div>
       <button type="submit"> Register </button>
-      <div className="signup-wrapper">
+      <div className="register-wrapper">
         <label> Do you already have an acccount ?</label>
         <a href="#"> Log In Now?</a>
       </div>

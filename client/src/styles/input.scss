@@ -3,13 +3,14 @@
 .input-wrapper {
   @include applyflex;
   justify-content: space-between;
-  min-width: 40vmax;
+  min-width: 44%;
   gap: 2vmax;
   font-size: 2vmax;
   margin: 1.5vmax 0;
  
  
   @include mobile{
+    min-width: 100%;
     flex-direction: column;
     align-items: start; 
     margin: 1vmax auto ;
