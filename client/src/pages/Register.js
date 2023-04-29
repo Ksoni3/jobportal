@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
-import '../styles/register.scss'
+import '../styles/login.scss'
+import Input from '../components/Input'
 
 const Register = () => {
   const [registerInfo, setRegisterInfo] = useState({
-    name: 'kamal',
+    name: '',
     email: '',
     password: '',
   })
@@ -19,41 +20,47 @@ const Register = () => {
     e.preventDefault()
     console.log(registerInfo)
     setRegisterInfo({
-      name: 'kamal',
+      name: '',
       email: '',
       password: '',
     })
-    // submit form data to the server here
+
   }
 
   return (
-    <div className="register-container">
-      <h1>Register Now !!!!</h1>
-
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label>Your Name:</label>
-          <input type="text" value={registerInfo.name} name="name" placeholder="Your name" onChange={handleChange} />
-        </div>
-
-        <div>
-          <label>Email:</label>
-          <input type="text" value={registerInfo.email}name="email" placeholder="Your Email" onChange={handleChange} />
-        </div>
-
-        <div>
-          <label>Password:</label>
-          <input type="password" value={registerInfo.password} name="password" placeholder="Your Password" onChange={handleChange} />
-        </div>
-
-        <div>
+      <form className="login-container" onSubmit={handleSubmit}>
+      <h1>Register Now !!!</h1>
+     
+      <div className="login-wrapper">
+        <Input
+          title="Name"
+          name="name"
+          value={registerInfo.name}
+          handleChange={handleChange}
+        />
+        <Input
+          title="Email"
+          name="email"
+          value={registerInfo.email}
+          handleChange={handleChange}
+        />
+        <Input
+          title="Password"
+          name="password"
+          value={registerInfo.password}
+          handleChange={handleChange}
+        />
+      </div>
+      <div className='checkbox-wrapper'>
           <input type="checkbox" id="terms" />
           <span htmlFor="terms">I have read license and all the terms and conditions</span>
         </div>
-
-        <button type="submit">Submit</button>
-      </form>
-    </div>
+      <button type="submit"> Register </button>
+      <div className="signup-wrapper">
+        <label> Do you already have an acccount ?</label>
+        <a href="#"> Log In Now?</a>
+      </div>
+    </form>
   )
 }
 

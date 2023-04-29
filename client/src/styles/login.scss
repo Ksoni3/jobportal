@@ -1,0 +1,69 @@
+@import 'mixin';
+
+.login-container {
+  min-height: 100vh;
+  @include applyflex;
+  justify-content: start;
+  flex-direction: column;
+  padding: 2vmax 0;
+  gap: 1vmax;
+  @include mobile{
+    align-items: start;
+    padding: 3vmax;
+    gap: 1.5vmax;
+    
+  }
+  .login-wrapper {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem; 
+    align-items: center; 
+    }
+
+    .checkbox-wrapper{
+        @include applyflex;
+        justify-content: flex-start;
+        gap: 1.5rem;
+        width: 40%;
+        @include mobile{
+            width: 100%;
+            font-size: 3.5vmin;
+            gap: 0.8rem;
+
+        }
+        
+    }
+
+    button{
+        width: 40%;
+        padding: 2vmax;
+        border-radius: 1vmax;
+        border: none;
+        background: black;
+        color: white;
+        font-size: 3vmin;
+
+        &:hover{
+            color: white;
+            background: crimson;
+        }
+
+        @include mobile{
+            width: 100%;
+            padding: 2.5vmax;
+            font-size: 5vmin;
+        }
+
+        
+
+
+    
+  }
+
+  .signup-wrapper{
+    display: flex;
+    gap: 0.5rem;
+  }
+
+}
